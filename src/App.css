@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+}
+
+.time {
+  color: white;
+  font-size: 75px;
+  text-align: left;
+  margin-top: 0%;
+  padding: 5%;
+}
+
+.time .ampm {
+  font-size: 0.5em; /* Adjust the font size of the AM/PM indicator */
+}
+
+.date {
+  font-size: 35px;
+  color: #ffffff; /* Change the color to your preference */
+  font-weight: bold;
+  padding: 5%;
+  margin-top: -15%;
+}
+
+/* Add this to src/App.css */
+
+.weather {
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  margin-top: -12%;
+  padding: 5%;
+}
+
+.weather h2 {
+  margin: 2px 0;
+}
