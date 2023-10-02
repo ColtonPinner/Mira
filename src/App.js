@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   const formatDate = () => {
-    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const options = { weekday: 'long', day: 'numeric' };
     return dateTime.toLocaleDateString(undefined, options);
   };
 
