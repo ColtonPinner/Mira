@@ -1,5 +1,4 @@
 const { app, BrowserWindow } = require('electron');
-
 let mainWindow;
 
 function createWindow() {
@@ -13,7 +12,7 @@ function createWindow() {
     fullscreen: true, // Automatically start in fullscreen mode
   });
 
-  mainWindow.loadURL('http://localhost:3000');
+  mainWindow.loadURL('http://localhost:3000/');
 }
 
 app.whenReady().then(createWindow);

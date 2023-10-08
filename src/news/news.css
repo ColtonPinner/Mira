@@ -1,7 +1,7 @@
 
 .news {
   position: fixed;
-    bottom: 80px;
+    bottom: 95px;
     margin-left: 10%;
     width: 75%;
     height: fit-content;
@@ -14,9 +14,9 @@
     border-radius: 20px;
   }
 
-  .h1{
+  h1{
     color: rgb(255, 255, 255);
-    font-size: medium;
+    font-size: 22px;
     font-weight: bold;
-    
   }
+  
