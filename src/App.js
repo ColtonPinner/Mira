@@ -15,7 +15,7 @@ function App() {
       navigator.geolocation.getCurrentPosition(
         (position) => {
           const { latitude, longitude } = position.coords;
-          const apiKey = 'YOUR_API_KEY';
+          const apiKey = 'bd5a2f8516050e2c75fb36723d6d60f4';
           const url = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`;
 
           axios.get(url)
@@ -36,7 +36,7 @@ function App() {
   }, []);
 
   const formatDate = () => {
-    const options = { weekday: 'long', day: 'numeric' };
+    const options = { day: 'numeric', weekday: 'long', month: 'long' };
     return dateTime.toLocaleDateString(undefined, options);
   };
 

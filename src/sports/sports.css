@@ -1,0 +1,36 @@
+.content {
+    align-content: center;
+    margin-left: 10%;
+    width: fit-content;
+    height: 120px;
+    background-color: rgba(75, 75, 75, 0.478);
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 0%;
+    padding: 2%;
+    border-radius: 20px;
+  }
+  
+  .team img {
+    max-width: 50px;
+    margin-right: 10px;
+  }
+  
+  .versus {
+    font-size: 20px;
+    margin: 0 10px;
+  }
+  
+  .result {
+    font-size: 18px;
+  }
+  
+  h1 {
+    align-content: center;
+    padding: 2%;
+    font-size: regular;
+    margin: 0;
+    color: rgb(255, 255, 255);
+  }
+  

@@ -1,0 +1,21 @@
+
+.news {
+  align-content: center;
+    margin-left: 10%;
+    width: 75%;
+    height: fit-content;
+    background-color: rgba(75, 75, 75, 0.478);
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    font-weight: bold;
+    margin-top: 5%;
+    padding: 2%;
+    border-radius: 20px;
+  }
+
+  .h1{
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    font-weight: bold;
+    
+  }

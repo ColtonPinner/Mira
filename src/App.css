@@ -19,7 +19,7 @@ body {
   color: #ffffff; /* Change the color to your preference */
   font-weight: bold;
   padding: 5%;
-  margin-top: -15%;
+  margin-top: -10%;
 }
 
 /* Add this to src/App.css */
@@ -35,3 +35,4 @@ body {
 .weather h2 {
   margin: 2px 0;
 }
+

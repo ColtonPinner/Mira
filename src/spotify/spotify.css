@@ -1,0 +1,22 @@
+.music-player {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  button {
+    font-size: 100px;
+    width: fit-content;
+    padding: 1%;
+    height: fit-content;
+    border-radius: 8%;
+    border: 3px solid #fff;
+    background-color: transparent;
+    color: #fff;
+      }
+      
+  album-cover {
+    width: 100px;
+    height: 100px;
+  }
+
+  
