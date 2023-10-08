@@ -1,6 +1,7 @@
 
 .news {
-  align-content: center;
+  position: fixed;
+    bottom: 80px;
     margin-left: 10%;
     width: 75%;
     height: fit-content;
