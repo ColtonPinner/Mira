@@ -5,11 +5,14 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NewsComponent from './news/news';
 import Footer from './footer/footer';
+import Time from './time/time';
+import Weather from './weather/weather';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+(ReactDOM.createRoot(document.getElementById('root'))).render(
   <React.StrictMode>
     <App />
+    <Time />
+    <Weather />
     <NewsComponent />
     <Footer />
   </React.StrictMode>

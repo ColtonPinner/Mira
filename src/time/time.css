@@ -1,0 +1,16 @@
+.time {
+    color: white;
+    font-size: 75px;
+    text-align: left;
+margin-top: 0%;
+    padding: 5%;
+  }
+    
+  .date {
+    position: absolute;
+    top: 4%;
+    font-size: 35px;
+    color: #ffffff; /* Change the color to your preference */
+    font-weight: bold;
+    padding: 5%;
+  }

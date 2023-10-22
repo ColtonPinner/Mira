@@ -1,0 +1,21 @@
+.weather {
+  position: absolute;
+  top: 8%;
+  color: white;
+  font-weight: bold;
+  padding: 5%;
+}
+
+.weather-description {
+  display: flex;
+  align-items: center;
+}
+
+.weather-description h2 {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.weather-description svg {
+  width: 24px; /* Set a specific width */
+  height: 24px; /* Set a specific height */
+}

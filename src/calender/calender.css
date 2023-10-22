@@ -1,0 +1,15 @@
+/* CalendlyComponent.css */
+.calendly-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calendly-inline-widget {
+    border: none;
+    width: 100%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    height: 630px;
+  }
+  
