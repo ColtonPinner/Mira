@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron');
+
 let mainWindow;
 
 function createWindow() {
@@ -8,11 +9,20 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
     },
-    frame: false, // Removes the frame (including tab bar)
-    fullscreen: true, // Automatically start in fullscreen mode
+    frame: false,
+    fullscreen: true,
   });
 
   mainWindow.loadURL('http://localhost:3000/');
+
+  geolocation((err, location) => {
+    if (err) {
+      console.error('Error getting location:', err);
+      return;
+    }
+    console.log('Latitude:', location.coords.latitude);
+    console.log('Longitude:', location.coords.longitude);
+  });
 }
 
 app.whenReady().then(createWindow);

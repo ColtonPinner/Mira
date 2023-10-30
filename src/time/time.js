@@ -25,9 +25,9 @@ const Time = () => {
   };
 
   return (
-    <div className="time-and-date">
+    <div className='container'>
       <h1 className="time">{formatTime()}</h1>
-      <h2 className="date">{formatDate()}</h2> {/* Added date */}
+      <h1 className="date">{formatDate()}</h1>
     </div>
   );
 };

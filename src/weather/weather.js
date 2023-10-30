@@ -29,15 +29,12 @@ const Weather = () => {
   }, []);
 
   return (
-    <div className="weather">
+    <div className="weather-container"> {/* Apply the 'weather-container' class */}
       {weather && (
         <>
           <h2>{weather.name}</h2>
-          <h2>{Math.round(weather.main.temp)}°F</h2>
-
-          <div className="weather-description">
-            <h2>{weather.weather[0].description}</h2>
-          </div>
+          <h3>{Math.round(weather.main.temp)}°F</h3>
+          <h2>{weather.weather[0].description}</h2>
         </>
       )}
     </div>

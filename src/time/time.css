@@ -1,16 +1,30 @@
+.container {
+  position: relative;
+  display: inline-block;
+  left: 60px;
+  top: 60px;
+}
+
+.time, .date {
+  color: white;
+  padding: 5%;
+  margin: 0; /* Remove default margin */
+  line-height: 1; /* Adjust the line height as needed */
+}
+
 .time {
-    color: white;
-    font-size: 75px;
-    text-align: left;
-margin-top: 0%;
-    padding: 5%;
-  }
-    
-  .date {
-    position: absolute;
-    top: 4%;
-    font-size: 35px;
-    color: #ffffff; /* Change the color to your preference */
-    font-weight: bold;
-    padding: 5%;
-  }
+  font-size: 75px;
+  margin-bottom: 0; /* Remove margin only at the bottom */
+}
+
+.date {
+  position: absolute;
+  top: 100%; /* Position it right under the time */
+  left: 0;
+  font-size: 35px;
+  color: #ffffff;
+  font-weight: bold;
+  padding: 5%;
+  text-align: left; /* Align with the left side */
+  white-space: nowrap; /* Prevent line breaks */
+}

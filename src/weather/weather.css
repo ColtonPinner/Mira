@@ -1,21 +1,19 @@
-.weather {
-  position: absolute;
-  top: 8%;
+.weather-container {
+  position: absolute; /* Set to absolute */
   color: white;
+  top: 200px;
+  left: 66px;
+  font-size: 18px;
   font-weight: bold;
-  padding: 5%;
+  width: 300px; /* Set a fixed width */
+  height: 100px; /* Set a fixed height */
+  line-height: 0.8; /* Adjust the line height as needed */
 }
 
-.weather-description {
-  display: flex;
-  align-items: center;
+h3 {
+  font-size: 55px;
+  margin: 0;
+  padding: 0;
 }
 
-.weather-description h2 {
-  margin-right: 10px; /* Adjust the margin as needed */
-}
-
-.weather-description svg {
-  width: 24px; /* Set a specific width */
-  height: 24px; /* Set a specific height */
-}
+/* Path: src/weather/weather.js */
