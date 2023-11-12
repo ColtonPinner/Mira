@@ -1,17 +1,8 @@
 .weather-icon {
-    width: 48px; /* Adjust the size as needed */
-    height: 48px; /* Adjust the size as needed */
+    width: 60px; /* Adjust the size as needed */
+    height: 60px; /* Adjust the size as needed */
     display: inline-block;
     margin-right: 10px; /* Adjust spacing between icons */
   }
   
-  .sunny-icon {
-    fill: #FFD700; /* Adjust color as needed */
-  }
-  
-  .cloudy-icon {
-    fill: #808080; /* Adjust color as needed */
-  }
-  
-  /* Add styles for other weather icons as needed... */
   
