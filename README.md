@@ -5,17 +5,10 @@
 ### Installation
 
 ```bash
-$ npm install Mira
+$ npm install
 ```
 
 ### Example
-
-```js
-const Mira = require('Mira');
-
-// your code here
-
-```
 
 ### Contributing
 - Fork this Repo first
