@@ -4,7 +4,6 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NewsComponent from './news/news';
-
 import Time from './time/time';
 import Weather from './weather/weather';
 
