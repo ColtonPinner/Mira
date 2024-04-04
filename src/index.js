@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import NewsComponent from './news/news';
-import Footer from './footer/footer';
+
 import Time from './time/time';
 import Weather from './weather/weather';
 
@@ -14,7 +14,6 @@ import Weather from './weather/weather';
     <Time />
     <Weather />
     <NewsComponent />
-    <Footer />
   </React.StrictMode>
 );
 

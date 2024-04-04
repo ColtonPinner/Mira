@@ -8,12 +8,14 @@ function createWindow() {
     height: 600,
     webPreferences: {
       nodeIntegration: true,
+      contextIsolation: false,
+    enableRemoteModule: true,
     },
     frame: false,
     fullscreen: true,
   });
 
-  mainWindow.loadURL('http://localhost:3000/');
+  mainWindow.loadURL('https://mira-lovat.vercel.app');
 
   geolocation((err, location) => {
     if (err) {
