@@ -9,21 +9,24 @@ function createWindow() {
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
-    enableRemoteModule: true,
+      enableRemoteModule: true,
+      webSecurity: false, // Add this line
     },
     frame: false,
     fullscreen: true,
   });
 
-  mainWindow.loadURL('https://mira-lovat.vercel.app');
+  mainWindow.loadURL('http://localhost:3000/');
 
-  geolocation((err, location) => {
-    if (err) {
-      console.error('Error getting location:', err);
-      return;
-    }
-    console.log('Latitude:', location.coords.latitude);
-    console.log('Longitude:', location.coords.longitude);
+  mainWindow.webContents.on('did-finish-load', () => {
+    mainWindow.webContents.executeJavaScript(`
+      navigator.geolocation.getCurrentPosition((position) => {
+        console.log('Latitude:', position.coords.latitude);
+        console.log('Longitude:', position.coords.longitude);
+      }, (error) => {
+        console.error('Error getting location:', error);
+      });
+    `);
   });
 }
 
