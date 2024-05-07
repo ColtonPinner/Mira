@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import NewsComponent from './news/news';
 import Time from './time/time';
 import Weather from './weather/weather';
+import StatusBar from './statusBar/statusbar';
 
 (ReactDOM.createRoot(document.getElementById('root'))).render(
   <React.StrictMode>
+    <StatusBar />
     <App />
     <Time />
     <Weather />

@@ -1,4 +1,5 @@
 const { app, BrowserWindow } = require('electron');
+const AutoLaunch = require('auto-launch');
 
 let mainWindow;
 
@@ -10,7 +11,7 @@ function createWindow() {
       nodeIntegration: true,
       contextIsolation: false,
       enableRemoteModule: true,
-      webSecurity: false, // Add this line
+      webSecurity: false,
     },
     frame: false,
     fullscreen: true,
@@ -23,23 +24,17 @@ function createWindow() {
       navigator.geolocation.getCurrentPosition((position) => {
         console.log('Latitude:', position.coords.latitude);
         console.log('Longitude:', position.coords.longitude);
-      }, (error) => {
-        console.error('Error getting location:', error);
-      });
     `);
   });
 }
 
-app.whenReady().then(createWindow);
+app.on('ready', createWindow);
 
-app.on('window-all-closed', () => {
-  if (process.platform !== 'darwin') {
-    app.quit();
-  }
+let autoLaunch = new AutoLaunch({
+  name: 'Your App Name',
+  path: app.getPath('exe'),
 });
 
-app.on('activate', () => {
-  if (mainWindow === null) {
-    createWindow();
-  }
+autoLaunch.isEnabled().then((isEnabled) => {
+  if (!isEnabled) autoLaunch.enable();
 });

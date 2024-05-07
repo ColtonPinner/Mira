@@ -1,0 +1,18 @@
+/* StatusBar.css */
+.status-bar {
+    position: fixed;
+    height: 15px;
+    top: 0;
+    right: 60px;
+    background-color: #4b4b4b7a;
+    z-index: 1;
+    margin-top: 5%;
+    padding: 1%;
+    border-radius: 50px;
+    color: white;
+    font-size: 15px;
+}
+
+.status-bar-icon {
+    margin-right: 10px;
+  }
